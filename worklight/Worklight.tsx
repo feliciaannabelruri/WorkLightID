@@ -203,6 +203,7 @@ export default function WorklightSite() {
           Work<span style={{ color: "#1A7A5E" }}>light</span>
         </span>
 
+        {/* Desktop nav links only — WA button removed */}
         <div className="dn" style={{ display: "flex", alignItems: "center", gap: 36 }}>
           {NAV_LINKS.map(({ label, id }) => (
             <button key={id} className="navlink"
@@ -211,16 +212,6 @@ export default function WorklightSite() {
               {label}
             </button>
           ))}
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-wa"
-            style={{
-              background: "#25D366", color: "#fff",
-              borderRadius: 8, padding: "9px 18px",
-              fontSize: 13, fontWeight: 600,
-              display: "flex", alignItems: "center", gap: 7,
-            }}>
-            <WaIcon size={14} />
-            WhatsApp
-          </a>
         </div>
 
         <button className="show-mob"
@@ -270,9 +261,9 @@ export default function WorklightSite() {
 
         <div className="fu d4" style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-wa"
-            style={{ background: "#25D366", color: "#fff", borderRadius: 10, padding: "14px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 9 }}>
+            style={{ background: "#000000", color: "#fff", borderRadius: 10, padding: "14px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 9 }}>
             <WaIcon size={16} />
-            Start on WhatsApp
+            Get Free Consultation!
           </a>
           <button onClick={() => go("work")} className="btn-ghost"
             style={{ background: "transparent", color: "#111110", border: "1px solid rgba(17,17,16,0.14)", borderRadius: 10, padding: "14px 22px", fontSize: 14, fontWeight: 400, cursor: "pointer" }}>
@@ -458,4 +449,4 @@ export default function WorklightSite() {
       </footer>
     </div>
   );
-}4
+}
